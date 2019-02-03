@@ -30,8 +30,8 @@ CREATE TABLE wedding_guests (
   first_name text,
   last_name text,
   rsvp boolean,
-  guests float,
-  meals integer
+  guests integer,
+  meals float
 );
 ```
 ### c. Using the table we just created, write a command that adds a column to track whether they were sent a thank you card.
@@ -43,7 +43,7 @@ ALTER TABLE wedding_guests ADD COLUMN thank_you_card boolean;
 ### d. You have decided to move the data about the meals to another table, so write a command to remove the column storing the number meals from the wedding table.
 
 ```sql
-ALTER TABLE wedding_guests DROP COLUMN meals boolean;
+ALTER TABLE wedding_guests DROP COLUMN meals;
 ```
 
 ### e. The guests are going to need a place to sit at the reception, so write a command that adds a column for table number.
